@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url("BackG/Untitled2.jpg");
+background-repeat: no-repeat;
+background-position:center ;
+background-size: cover;
+Background-attachment:fixed;
+    background-color: rgb(55, 69, 92);
+  }
+
+  .header {
+    -ms-flex: 70%; 
+    flex: 70%;
+    padding: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+  }
+  .header h1  {
+
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    padding: 4px;
+    box-shadow: 1px 0 20px rgb(134, 98, 201) ;
+  }
+  .navbar a {
+    float: right;
+    display: block;
+    color: rgb(25, 159, 221);
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+  
+  }
+  .navbar a:hover{
+    box-shadow: 0 0 20px rgb(134, 98, 201) ;
+    border-radius:10px ;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+  }
+  .navbar a.right {
+    float: right;
+  }
+  
+  .navbar a:hover {
+    background-color:  #333;
+    color: rgb(209, 179, 179);
+  }
+  .row {  
+    text-align: right;
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap;
+  
+  }
+  .main {   
+    -ms-flex: 70%; 
+    flex: 70%;
+    background-color: rgb(51, 130, 167);
+    padding: 20px;
+    opacity: 0.8;
+    color: ghostwhite;
+    box-shadow: 0 0 20px rgb(134, 98, 201) ;
+  }
+  .side {
+    text-align: center;
+    flex: 30%;
+    background-color: #073344;
+    padding: 20px;
+    color: azure;
+
+    box-shadow: 0 0 20px rgb(134, 98, 201) ;
+    transition-property: all ;
+    transition-duration: 1s;
+  
+  }
+  .side:hover{
+opacity: 0.3;
+background-color: black;
+  }
+
+  .a{
+    text-shadow: 2px 2px 2px rgb(134, 98, 201);
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  
+  }
+  
+  .p1{
+    border: 2px solid rgb(17, 123, 184);
+    border-radius: 12px;
+    padding: 1px;
+    text-align: center;
+    background: #97a6b8;
+    color: rgb(0, 0, 0);
+  }
+  .img {
+    width: 80%;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(134, 98, 201) ;
+  }
+  #slider{
+    width: 60%;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(134, 98, 201) ;
+
+    }
+    .slide{
+    display: none;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  
+    }
+
+ 
+    .slide.active{
+    display: block;
+    
+    }
+    #slider img{
+    width: 100%;
+    }
+    .text{
+    color: rgb(255, 255, 255);
+    position:absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgb(1, 8, 14);
+    }
+    .perv,.next{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    }
+    .perv{
+    left: 5px;
+    }
+    .next{
+    right: 5px;
+    }
+    .dot{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 60%;
+    background:rgb(158, 152, 241) ;
+    border: 1px solid rgb(26, 39, 150);
+    box-shadow: 1px 1px 5px rgb(134, 98, 201);
+    }
+    #dots{
+    text-align: center;
+    }
+    .dot.active{
+    background:#073344;
+    }
+    @keyframes fade {
+        from {opacity: 0.5}
+        to {opacity: 2}
+      }
+
+  .Footer {
+    opacity: 0.6 ;
+    padding: 1px;
+    text-align: center;
+    background: rgb(128, 130, 139);
+  }
+
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .header {
+      float: none;
+      width: 100%;
+    }
+}

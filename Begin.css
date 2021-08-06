@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url("BackG/liGEtm.jpg");
+background-repeat: no-repeat;
+background-position:center ;
+background-size: cover;
+Background-attachment:fixed;
+    background-color: rgb(55, 69, 92);
+  }
+
+  .header {
+    -ms-flex: 70%; 
+    flex: 70%;
+    padding: 15%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+ 
+
+  }
+  .header h1 {
+    border-style: groove;
+    border-color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+  }
+
+    a:link, a:visited {
+        background-color: #ffffff;
+        opacity: 0.7;
+        color: rgb(0, 0, 0);
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+      a:hover, a:active {
+          opacity: 1;
+        background-color: #ffffff;
+      }
+
+
+  .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    opacity: 0.7;
+  }
+  
+  .fa:hover {
+      opacity: 1;
+  }
+  
+  .fa-instagram {
+    background: #6d25befa;
+    color: rgb(255, 255, 255);
+  }
+  
+  .fa-telegram {
+    background: #6d25befa;
+    color: rgb(255, 255, 255);
+  }
+  .Footer {
+    opacity: 0.6 ;
+    padding: 1px;
+    text-align: center;
+    background: rgb(112, 142, 240);
+  }
+
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .header {
+      float: none;
+      width: 100%;
+    }
+}
