@@ -14,7 +14,7 @@
       </div>
       
       <div class="navbar">
-        <a href="home.html">خانه</a>
+        <a href="index.php">خانه</a>
         <a href="about.html">درباره من</a>
         <a href="Contact.html">ارتباط با من</a>
       </div>
